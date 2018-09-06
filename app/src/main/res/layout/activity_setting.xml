@@ -1,0 +1,201 @@
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/setting_toolbar"
+                android:title="设置"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:id="@+id/setting_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:divider="@android:drawable/divider_horizontal_textfield"
+            android:showDividers="middle|end"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="允许放大页面"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_setSupportZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="开启缩放组件"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_setBuiltInZoomControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="开启画面自适应"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_setUseWideViewPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="允许JavaScript"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_setJavaScriptEnabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="尝试打开电脑版界面"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_PCmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="开启页面缓存"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+
+            <Switch
+                    android:id="@+id/webview_setDomStorageEnabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="首页"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:layout_weight="2"/>
+
+            <EditText android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/webview_setHomePage"
+                      android:padding="10dp"
+                      android:text="https://www.baidu.com"
+                      android:textSize="18sp"
+                      android:textStyle="normal"
+                      android:maxLines="1"
+                      android:layout_weight="7"/>
+
+            <Button
+                    android:id="@+id/webview_homePageButtom"
+                    android:hint="确认"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

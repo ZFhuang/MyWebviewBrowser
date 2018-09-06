@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/baseline_language"
+                android:title="百度"/>
+        <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/baseline_language"
+                android:title="B站"/>
+        <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/baseline_language"
+                android:title="知乎"/>
+        <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/baseline_language"
+                android:title="微博"/>
+        <item
+                android:id="@+id/nav_newtab"
+                android:icon="@drawable/baseline_language"
+                android:title="深大内部网"/>
+    </group>
+
+    <item android:title="更多">
+        <menu>
+            <!--<item-->
+            <!--android:id="@+id/nav_newtab"-->
+            <!--android:icon="@android:drawable/ic_menu_add"-->
+            <!--android:title="新建标签页"/>-->
+            <item
+                    android:id="@+id/nav_newbookmark"
+                    android:icon="@android:drawable/ic_menu_add"
+                    android:title="添加到收藏夹"/>
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@android:drawable/ic_menu_share"
+                    android:title="复制并分享当前页面"/>
+        </menu>
+    </item>
+
+</menu>
